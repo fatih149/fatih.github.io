@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim</title>
+    <title>Fatih Küçük - Müzik</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: url('https://i.scdn.co/image/ab67616d0000b273b1e2e2e2e2e2e2e2e2e2e2e') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
         }
         .container {
             width: 80%;
@@ -17,7 +19,7 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: rgba(0, 0, 0, 0.7);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -30,34 +32,77 @@
             margin: 20px 0;
         }
         nav a {
-            color: #333;
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
         }
+        .intro {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+            text-align: center;
+        }
+        .intro h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+        .intro p {
+            font-size: 20px;
+        }
         .content {
             padding: 20px;
-            background: #fff;
+            background: rgba(0, 0, 0, 0.7);
         }
         .content h2 {
             text-align: center;
-            color: #333;
+            color: #fff;
         }
         .content p {
             line-height: 1.6;
         }
+        .logos {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logos a {
+            margin: 0 10px;
+        }
+        .logos img {
+            width: 50px;
+            height: 50px;
+        }
         footer {
-            background: #333;
+            background: rgba(0, 0, 0, 0.7);
             color: #fff;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
         }
+        .contact-form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #e53935;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Adınız Soyadınız</h1>
+        <h1>Fatih Küçük</h1>
     </header>
     <nav>
         <a href="#">Ana Sayfa</a>
@@ -65,14 +110,38 @@
         <a href="#">Projeler</a>
         <a href="#">İletişim</a>
     </nav>
+    <section class="intro">
+        <h1>Merhaba, Ben Fatih Küçük!</h1>
+        <p>Müzik tutkunu ve sanatçıyım. Bu benim kişisel web sitem.</p>
+    </section>
     <section class="content">
         <div class="container">
-            <h2>İletişim</h2>
-            <p>Benimle iletişime geçmek için <a href="mailto:ornek@eposta.com">buraya tıklayın</a>.</p>
+            <h2>Hakkımda</h2>
+            <p>Ben Fatih Küçük. Müzik hayatımın merkezinde yer alıyor. Yeni projelerim ve çalışmalarım hakkında bilgi almak için bu siteyi takip edebilirsiniz.</p>
         </div>
     </section>
+    <section class="logos">
+        <a href="https://www.youtube.com/channel/UC41E99afe7tLV-JJwDckfXw" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+        <a href="https://open.spotify.com/intl-tr/artist/3jsw0BE59LPijdiDWMCW8O" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+        </a>
+        <a href="https://instagram.com/fallishmusic" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+    </section>
+    <section class="contact-form">
+        <h2>İletişime Geçin</h2>
+        <form action="mailto:fallishmusic@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Adınız">
+            <input type="email" name="email" placeholder="E-posta Adresiniz">
+            <textarea name="message" placeholder="Mesajınız"></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
     <footer>
-        <p>Adınız Soyadınız © 2024</p>
+        <p>Fatih Küçük © 2024</p>
     </footer>
 </body>
 </html>
